@@ -1,0 +1,26 @@
+#WAP a python program on odd and even number
+
+num=int(input("Enter a number:"))
+if num==0:
+    print("invalid number")
+elif num%2==0:
+    print("number is even")
+else:
+    print("number is odd")
+
+
+
+
+#WAP on python for factorial of any no
+
+num=int(input("enter a number"))
+if num<0:
+    print("factorial is not accurate no")
+else:
+    n=1
+    for i in range(num,0,-1):
+        n *= i
+    print("factorial of",num,"is",n) 
+
+
+
