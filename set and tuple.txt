@@ -1,0 +1,212 @@
+# 1. Add a list of elements to a given set
+# Given:
+# sampleSet = {"Yellow", "Orange", "Black"}
+# sampleList = ["Blue", "Green", "Red","Yellow","orange"]
+
+Set = {"Yellow", "Orange", "Black"}
+List = ["Blue", "Green", "Red","Yellow","orange"]
+
+Set.update(List)
+print(Set)
+
+
+
+
+
+# 2. display common elements from the given set
+# set1 = {10, 20, 30, 40, 50}
+# set2 = {30, 40, 50, 60, 70}
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+common=set.intersection(set2)
+print(common)
+
+
+
+
+# 3. Generate a new set with all items from both sets by removing numbers which are in both sets.
+# set1 = {10, 20, 30, 40, 50,25}
+# set2 = {30, 40, 50, 60, 70,100}
+# o/p : order is not important
+# {70, 10, 20, 60,25,100}
+
+
+set1 = {10, 20, 30, 40, 50,25}
+set2 = {30, 40, 50, 60, 70,100}
+set3 = set()
+
+for item in set1:
+    if item not in set2:
+         set3.add(item)
+
+for item in set2:
+    if item not in set1:
+        set3.add(item)
+
+print(set3)
+
+
+
+
+
+# 4. set of all elements in either A or B, but not both
+# set1 = {10, 20, 30, 40, 50}
+# set2 = {30, 40, 50, 60, 70}
+# Expected output:
+# {20, 70, 10, 60}
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+order=set1 ^ set2
+print(order)
+
+
+
+
+
+# 5. Update set1 by adding items from set2, except common items
+# set1 = {10, 20, 30, 40, 50}
+# set2 = {30, 40, 50, 60, 70}
+# Expected output:
+# {70, 10, 20, 60}
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+common=set1 ^ set2
+print(common)
+
+
+
+
+
+
+# 6. Take a sentence as input from user. Every word is seperated by space. Print all unique words from the sentance.
+
+A = "Welcome to IACSD"
+
+
+words = A.split()
+print(words)
+
+
+
+
+# 1. Reverse the following tuple
+# aTuple = (10, 20, 30, 40, 50,60)
+# Expected output:
+# (60,50, 40, 30, 20, 10)
+
+T1= (10,20,30,40,50,60)
+t2 = T1[::-1]
+
+print(t2)
+
+
+
+
+
+
+# 2. display value 20 from the following tuple
+# aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+
+
+T1=("Orange", [10, 20, 30], (5, 15, 25))
+T2=T1[1][1]
+print(T2)
+
+
+
+
+
+
+# 3. Unpack the following tuple into 4 variables
+# aTuple = (10, 20, 30, 40)
+
+
+print(" After unpacking")
+
+t1 = (10, 20, 30, 40)
+
+a,b,c,d = t1
+
+print(a,b,c,d )
+
+
+
+
+
+
+
+# 4. Swap the following two tuples
+# tuple1 = (11, 22)
+# tuple2 = (99, 88)
+# Expected output:
+# tuple1 = (99, 88)
+# tuple2 = (11, 22)
+
+tuple1 = (11, 22)
+tuple2 = (99, 88)
+temp=tuple1
+tuple1=tuple2
+tuple2=temp
+
+
+
+
+# 5. Copy element 44 and 55 from the following tuple into a new tuple
+# tuple1 = (11, 22, 33, 44, 55, 66)
+# Expected output:
+# # tuple2: (44, 55)
+
+tuple1 = (11, 22, 33, 44, 55, 66)
+i=[]
+
+
+
+
+for item in t1:
+    if item == 44 or item == 55 in t1:
+        i.append(item)
+
+t2 = tuple(i)
+print("Copy element")
+print(t2)
+
+
+
+
+
+# 6. Modify the first item (22) of a list inside a following tuple to 200
+# tuple1 = (11, [22, 33], 44, 55)
+# Expected output:
+# tuple1: (11, [200, 33], 44, 55)
+
+print("After modification")
+t1 = (11, [22, 33], 44, 55)
+
+t1[1][0] = 200
+
+print(t1)
+
+
+
+
+
+# 7. Take two integer values in a & b. Swap their values using tuple, using temparary variable and without tuple and without temparary variable.
+# Ex. a=10 b=23
+# After swapping a=23 b=10
+
+print("after swap")
+a=10
+b=23
+
+a,b = b,a
+print("a=",a,"b=",b)
+
+
+
+
+
+
