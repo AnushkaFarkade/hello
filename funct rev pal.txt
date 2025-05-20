@@ -1,0 +1,80 @@
+#write a function, take a string as input and return all its characters into it
+
+def str1(t):
+  reverse.t[::-1]
+  # str2=str()
+  #  for in in range(1,str)
+
+
+t=input("Enter characters:")
+print(str1(t))
+
+
+
+
+def pallindrome(a):
+   s=a[::-1]
+   if s==a
+print("pallindrome:")
+   else:
+
+
+a=int(input("Enter:"))
+
+
+
+
+
+#write a menu driven prog for calculator add,sub,multipy,divide
+
+def calculator(num):
+
+  case 1:
+    def add(a,b)
+    c
+  case 2:
+    def sutract()
+  case 3:
+
+numbers=int(input("Enter the nos"))
+
+
+
+
+def maxmin(l1):
+    max_val=max(l1)
+    min_val=min(l1)
+    return max_val, min_val
+
+l=[1,2,3,56,78,9,33]
+print(maxmin(l))
+
+
+
+
+
+def add(a,b):
+  """simple addition of 10 and 20"""
+  c=a+b
+  e=a*b
+  print("addition numbers",c)
+  print("multiply numbers",e)
+
+def subtract(a,b):
+  """Simple ubtaraction of 10 and 20"""
+  d=a-b
+  print("Subtaction numbers",d)
+
+add(3,5)
+subtract(2,5)
+
+
+
+
+
+
+
+
+
+
+
