@@ -1,0 +1,10 @@
+pwd 
+whoami
+docker pull ubuntu/apache2
+echo "build docker images"
+docker build -t (give name) .
+echo "build docker"
+docker login -u    -p 
+echo "party"
+docker run --name anushka -d -p 8001:80 repo name
+echo "run"
